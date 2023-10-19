@@ -1,0 +1,52 @@
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = [x**2 for x in numbers]
+print("Squared numbers:", squared_numbers)
+
+
+def greet(name, greeting="Hello"):
+    print(f"{greeting}, {name}!")
+
+greet("Alice")
+greet("Bob", "Hi")
+
+
+scores = {"Eve": 90, "Frank": 85, "Grace": 78, "Hannah": 92}
+high_scores = {student: score for student, score in scores.items() if score >= 80}
+print("High Scores:", high_scores)
+
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+union_set = set1.union(set2)
+intersection_set = set1.intersection(set2)
+print("Union:", union_set)
+print("Intersection:", intersection_set)
+
+
+numbers = [5, 2, 8, 1, 9]
+ascending_order = sorted(numbers)
+descending_order = sorted(numbers, reverse=True)
+print("Ascending Order:", ascending_order)
+print("Descending Order:", descending_order)
+
+
+from datetime import datetime
+current_datetime = datetime.now()
+print("Current Date and Time:", current_datetime)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+even_squares = [x**2 for x in numbers if x % 2 == 0]
+print("Even Squares:", even_squares)
+
+
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+list3 = list1 + list2
+print("Concatenated List:", list3)
+
+
+fruits = ["apple", "banana", "cherry"]
+for index, fruit in enumerate(fruits):
+    print(f"Index {index}: {fruit}")
+
+
