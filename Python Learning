@@ -1,0 +1,91 @@
+name = "Ragun"
+age = 31
+print("My name is", name)
+print("Age:", age)
+
+
+age = 31
+if age < 18:
+    print("You are a minor.")
+elif age >= 18 and age < 65:
+    print("You are an adult.")
+else:
+    print("You are a senior citizen.")
+
+
+name = "Ragun"
+age = 31
+message = "My name is " + name + " and I am " + str(age) + " years old."
+print(message)
+
+
+num1 = 10
+num2 = 5
+sum_result = num1 + num2
+difference_result = num1 - num2
+print("Sum:", sum_result)
+print("Difference:", difference_result)
+
+
+value = 3.14159
+rounded_value = round(value, 2)  # Round to 2 decimal places
+print("Rounded value:", rounded_value)
+
+
+countries = ["USA", "Canada", "France", "Germany", "Japan"]
+print("List of Countries:")
+for country in countries:
+    print(country)
+
+
+country = "Australia"
+letter_count = len(country)
+print(f"The number of letters in {country} is {letter_count}.")
+
+
+
+countries = ["france", "germany", "spain", "italy"]
+capitalized_countries = [country.capitalize() for country in countries]
+print("Capitalized Country Names:", capitalized_countries)
+
+
+countries = ["Sweden", "Denmark", "Norway", "Finland", "Iceland"]
+sorted_countries = sorted(countries)
+print("Sorted Countries:")
+for country in sorted_countries:
+    print(country)
+
+
+countries = ["Australia", "Canada", "United States of America", "United Arab Emirates", "Antigua and Barbuda"]
+longest_country = max(countries, key=len)
+print(f"The longest country name is: {longest_country}")
+
+
+countries = ["USA", "Canada", "France", "Germany", "Japan"]
+country_to_remove = "France"
+countries.remove(country_to_remove)
+print(f"{country_to_remove} has been removed. Updated list of countries:")
+for country in countries:
+    print(country)
+
+
+players = ["Lionel Messi", "Cristiano Ronaldo", "Neymar", "Kylian Mbappé", "Sergio Ramos"]
+print("List of Football Players:")
+for player in players:
+    print(player)
+
+
+players = ["Lionel Messi", "Cristiano Ronaldo", "Neymar", "Kylian Mbappé", "Sergio Ramos"]
+target_player = "Neymar"
+if target_player in players:
+    print(f"{target_player} is in the list of players.")
+else:
+    print(f"{target_player} is not in the list of players.")
+
+
+players = ["Cristiano Ronaldo", "Lionel Messi", "Cristiano Ronaldo", "Kylian Mbappé", "Cristiano Ronaldo"]
+target_player = "Cristiano Ronaldo"
+count = players.count(target_player)
+print(f"{target_player} appears {count} times in the list.")
+
+
